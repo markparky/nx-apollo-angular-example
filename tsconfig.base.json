@@ -10,12 +10,18 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2017", "dom", "esnext.asynciterable"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-apollo-angular-example/common-ui": ["libs/common-ui/src/index.ts"]
+      "@nx-apollo-angular-example/common-ui": ["libs/common-ui/src/index.ts"],
+      "@nx-apollo-angular-example/data-access": [
+        "libs/data-access/src/index.ts"
+      ],
+      "@nx-apollo-angular-example/feature-sets": [
+        "libs/feature-sets/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
